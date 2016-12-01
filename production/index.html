@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gentellela Alela! | </title>
+    <title>Sleep Monitor | </title>
     <!-- Bootstrap -->
     <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -24,80 +24,98 @@
 
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
+	 <link href="css/mystyle.css" rel="stylesheet">
 	<style>
-	.cloudData {
-		width:40%;
-		margin:0 auto;
-	}
-	@media screen and (max-width: 480px) {
-		.cloudData {
-			width:90%;
-			margin:0 auto;
-			font-size:14px;
-		}
-	}
-	@media screen and (max-width: 720px) {
-		.cloudData {
-			width:70%;
-			margin:0 auto;
-		}
-	}
-	@media screen and (max-width: 1020px) {
-		.cloudData {
-			width:60%;
-			margin:0 auto;
-		}
-	}
 	</style>
   </head>
+
   <body class="nav-md">
     <div class="container body">
-      <div class="main_container">
+      <div class="main_container clearfix">
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
+              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Sleep Monitor</span></a>
             </div>
-            <div class="clearfix"></div>
             <!-- menu profile quick info -->
+            <div class="clearfix"></div>
+          
             <div class="profile">
               <div class="profile_pic">
                 <img src="images/img.jpg" alt="..." class="img-circle profile_img">
               </div>
               <div class="profile_info">
                 <span>Welcome,</span>
-                <p><strong> Akshay And Team</strong></p>
+                <h2>Akshay Bhole</h2>
               </div>
             </div>
             <!-- /menu profile quick info -->
-
-            <br />
-
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a href="index.html"><i class="fa fa-home"></i> Home</a>
+                  <li><a><i class="fa fa-home"></i> Home</a>
                   </li>
-                  <li><a href="#Devices"><i class="fa fa-edit"></i> Devices </a>
+                  <li><a><i class="fa fa-edit"></i> Forms</a>
                   </li>
-                  <li><a href="profile.html"><i class="fa fa-desktop"></i> Profile</a>
+                  <li><a><i class="fa fa-desktop"></i> UI Elements</span></a>
                   </li>
-                  <li><a href="#Analysis"><i class="fa fa-table"></i> Analysis</a>
+                  <li><a><i class="fa fa-table"></i> Tables</a>
                   </li>
-                  <li><a href="#DataPresentation"><i class="fa fa-bar-chart-o"></i> Data Presentation</a>
+                  <li><a><i class="fa fa-bar-chart-o"></i> Data Presentation</a>
                   </li>
-                  <li><a href="#Preferences"><i class="fa fa-clone"></i> Preferences</a>
-                  </li>
-				  <li><a href="#Help"><i class="fa fa-clone"></i> Help</a>
+                  <li><a><i class="fa fa-clone"></i>Layouts</a>
                   </li>
                 </ul>
               </div>
               <div class="menu_section">
+                <h3>Live On</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="e_commerce.html">E-commerce</a></li>
+                      <li><a href="projects.html">Projects</a></li>
+                      <li><a href="project_detail.html">Project Detail</a></li>
+                      <li><a href="contacts.html">Contacts</a></li>
+                      <li><a href="profile.html">Profile</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      <li><a href="page_403.html">403 Error</a></li>
+                      <li><a href="page_404.html">404 Error</a></li>
+                      <li><a href="page_500.html">500 Error</a></li>
+                      <li><a href="plain_page.html">Plain Page</a></li>
+                      <li><a href="login.html">Login Page</a></li>
+                      <li><a href="pricing_tables.html">Pricing Tables</a></li>
+                    </ul>
+                  </li>
+                  <li><a><i class="fa fa-sitemap"></i> Multilevel Menu <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="#level1_1">Level One</a>
+                        <li><a>Level One<span class="fa fa-chevron-down"></span></a>
+                          <ul class="nav child_menu">
+                            <li class="sub_menu"><a href="level2.html">Level Two</a>
+                            </li>
+                            <li><a href="#level2_1">Level Two</a>
+                            </li>
+                            <li><a href="#level2_2">Level Two</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a href="#level1_2">Level One</a>
+                        </li>
+                    </ul>
+                  </li>                  
+                  <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
+                </ul>
               </div>
 
             </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
             <div class="sidebar-footer hidden-small">
               <a data-toggle="tooltip" data-placement="top" title="Settings">
                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
@@ -112,8 +130,11 @@
                 <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
               </a>
             </div>
+            <!-- /menu footer buttons -->
           </div>
         </div>
+
+        <!-- top navigation -->
         <div class="top_nav">
           <div class="nav_menu">
             <nav>
@@ -123,9 +144,8 @@
 
               <ul class="nav navbar-nav navbar-right">
                 <li class="">
-                  <a href="javascript:;" class="user-profile dropdown-toggle" 
-					data-toggle="dropdown" aria-expanded="false">
-                    <img src="images/img.jpg" alt="">Akshay And Team
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">Akshay Bhole
                     <span class=" fa fa-angle-down"></span>
                   </a>
                   <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -210,200 +230,181 @@
           </div>
         </div>
         <!-- /top navigation -->
-
         <!-- page content -->
         <div class="right_col" role="main">
+         <div class="row">
+          <div class="SunsetData">
+            <div class="sunsetText1 text-center">
+              <p>Hello,Rajshekhar</p>
+              <p>Good Morning</p>
+            </div>              
+          </div>
+        </div>
+
           <!-- top tiles -->
-        <!--  <div class="row tile_count">
-            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Users</span>
-              <div class="count">2500</div>
-              <span class="count_bottom"><i class="green">4% </i> From last Week</span>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-clock-o"></i> Average Time</span>
-              <div class="count">123.50</div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>3% </i> From last Week</span>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Males</span>
-              <div class="count green">2,500</div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Females</span>
-              <div class="count">4,567</div>
-              <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>12% </i> From last Week</span>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Collections</span>
-              <div class="count">2,315</div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
-              <span class="count_top"><i class="fa fa-user"></i> Total Connections</span>
-              <div class="count">7,325</div>
-              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
-            </div>
-          </div> -->
-          <!-- /top tiles -->
-
-          <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="dashboard_graph">
-
-                <div class="row x_title">
-                  <div class="col-md-6">
-                    <h3>Network Activities <small>Graph title sub-title</small></h3>
-                  </div>
-                </div>
-                <div class="clearfix"></div>
+          <div class="row tile_count">
+            <div class="tile_count_text">
+              <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                <span class="count_top"><i class="fa fa-user"></i> Total Users</span>
+                <div class="count">2500</div>
+                <span class="count_bottom"><i class="green">4% </i> From last Week</span>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                <span class="count_top"><i class="fa fa-clock-o"></i> Average Time</span>
+                <div class="count">123.50</div>
+                <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>3% </i> From last Week</span>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                <span class="count_top"><i class="fa fa-user"></i> Total Males</span>
+                <div class="count green">2,500</div>
+                <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                <span class="count_top"><i class="fa fa-user"></i> Total Females</span>
+                <div class="count">4,567</div>
+                <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>12% </i> From last Week</span>
               </div>
             </div>
-
           </div>
-          <br />
-
-	   <div class="row" style="height:350px;">
-	  <div class="" role="tabpanel" data-example-id="togglable-tabs">
-		<ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
-		  <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" 
-		  aria-expanded="true">First Tab</a>
-		  </li>
-		  <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" 
-		  aria-expanded="false">Second Tab</a>
-		  </li>
-		  <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" 
-		  aria-expanded="false">Third Tab</a>
-		  </li>
-		</ul>
-		<div id="myTabContent" class="tab-content">
-		  <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-			  <div id="placeholder33" style="height: 260px; display: none" class="demo-placeholder"></div>
-			  <div style="width: 100%;">
-				<div id="canvas_dahs" class="demo-placeholder" style="width: 100%; height:270px;"></div>
-			  </div>
+          <!-- /top tiles -->
+          <div class="row">
+            <div class="col-md-6 col-xs-12">
             </div>
-		  </div>
-		  <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
-				<h1>Second Tab Content</h1>
-		  </div>
-		  <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
-				<h1>Third Tab Content</h1>
-		  </div>
-		</div>
-	  </div>
-   </div>
-	<div class="row">
-	  <div class="cloudData">
-		  <div class="x_panel">
-			<div class="x_title">
-			  <h2>Daily active users <small>Sessions</small></h2>
-			  <ul class="nav navbar-right panel_toolbox">
-				<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-				</li>
-				<li class="dropdown">
-				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-				  <ul class="dropdown-menu" role="menu">
-					<li><a href="#">Settings 1</a>
-					</li>
-					<li><a href="#">Settings 2</a>
-					</li>
-				  </ul>
-				</li>
-				
-				</li>
-			  </ul>
-			  <div class="clearfix"></div>
-			</div>
-			<div class="x_content">
-			  <div class="row">
-				<div class="col-sm-12">
-				  <div class="temperature"><b>Monday</b>, 07:30 AM
-					<span>F</span>
-					<span><b>C</b></span>
-				  </div>
-				</div>
-			  </div>
-			  <div class="row">
-				<div class="col-sm-4">
-				  <div class="weather-icon">
-					<canvas height="84" width="84" id="partly-cloudy-day"></canvas>
-				  </div>
-				</div>
-				<div class="col-sm-8">
-				  <div class="weather-text">
-					<h2>Texas <br><i>Partly Cloudy Day</i></h2>
-				  </div>
-				</div>
-			  </div>
-			  <div class="col-sm-12">
-				<div class="weather-text pull-right">
-				  <h3 class="degrees">23</h3>
-				</div>
-			  </div>
+            <div class="col-md-6 col-xs-12">
+            </div>
+          </div>
+          <div class="row">
+            <ul class="cartWrapper clearfix">
+              <li class="col-md-6 col-xs-12 cartList pull-left">
+                <div class="cartData clearfix">
+                  <span class="cartPic pull-left"><img src="images/picture.jpg">
+                  <span class="cartText">This is an sample text for Cart Layout</span>
+                  </span>
+                </div>
+              </li>
+              <li class="col-md-6 col-xs-12 cartList pull-left">
+                <div class="cartData clearfix">
+                  <span class="cartPic pull-left"><img src="images/picture.jpg">
+                  <span class="cartText">This is an sample text for Cart Layout</span>
+                  </span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Daily active users <small>Sessions</small></h2>
+                    <ul class="nav navbar-right panel_toolbox">
+                      <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                      </li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Settings 1</a>
+                          </li>
+                          <li><a href="#">Settings 2</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li><a class="close-link"><i class="fa fa-close"></i></a>
+                      </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="temperature"><b>Monday</b>, 07:30 AM
+                          <span>F</span>
+                          <span><b>C</b></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="weather-icon">
+                          <canvas height="84" width="84" id="partly-cloudy-day"></canvas>
+                        </div>
+                      </div>
+                      <div class="col-sm-8">
+                        <div class="weather-text">
+                          <h2>Texas <br><i>Partly Cloudy Day</i></h2>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="weather-text pull-right">
+                        <h3 class="degrees">23</h3>
+                      </div>
+                    </div>
 
-			  <div class="clearfix"></div>
+                    <div class="clearfix"></div>
 
-			  <div class="row weather-days">
-				<div class="col-sm-2">
-				  <div class="daily-weather">
-					<h2 class="day">Mon</h2>
-					<h3 class="degrees">25</h3>
-					<canvas id="clear-day" width="32" height="32"></canvas>
-					<h5>15 <i>km/h</i></h5>
-				  </div>
-				</div>
-				<div class="col-sm-2">
-				  <div class="daily-weather">
-					<h2 class="day">Tue</h2>
-					<h3 class="degrees">25</h3>
-					<canvas height="32" width="32" id="rain"></canvas>
-					<h5>12 <i>km/h</i></h5>
-				  </div>
-				</div>
-				<div class="col-sm-2">
-				  <div class="daily-weather">
-					<h2 class="day">Wed</h2>
-					<h3 class="degrees">27</h3>
-					<canvas height="32" width="32" id="snow"></canvas>
-					<h5>14 <i>km/h</i></h5>
-				  </div>
-				</div>
-				<div class="col-sm-2">
-				  <div class="daily-weather">
-					<h2 class="day">Thu</h2>
-					<h3 class="degrees">28</h3>
-					<canvas height="32" width="32" id="sleet"></canvas>
-					<h5>15 <i>km/h</i></h5>
-				  </div>
-				</div>
-				<div class="col-sm-2">
-				  <div class="daily-weather">
-					<h2 class="day">Fri</h2>
-					<h3 class="degrees">28</h3>
-					<canvas height="32" width="32" id="wind"></canvas>
-					<h5>11 <i>km/h</i></h5>
-				  </div>
-				</div>
-				<div class="col-sm-2">
-				  <div class="daily-weather">
-					<h2 class="day">Sat</h2>
-					<h3 class="degrees">26</h3>
-					<canvas height="32" width="32" id="cloudy"></canvas>
-					<h5>10 <i>km/h</i></h5>
-				  </div>
-				</div>
-				<div class="clearfix"></div>
-			  </div>
-			</div>
-		  </div>
-
-		</div>
-		<!-- end of weather widget -->
-       </div>
-	</div>
+                    <div class="row weather-days">
+                      <div class="col-sm-2">
+                        <div class="daily-weather">
+                          <h2 class="day">Mon</h2>
+                          <h3 class="degrees">25</h3>
+                          <canvas id="clear-day" width="32" height="32"></canvas>
+                          <h5>15 <i>km/h</i></h5>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="daily-weather">
+                          <h2 class="day">Tue</h2>
+                          <h3 class="degrees">25</h3>
+                          <canvas height="32" width="32" id="rain"></canvas>
+                          <h5>12 <i>km/h</i></h5>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="daily-weather">
+                          <h2 class="day">Wed</h2>
+                          <h3 class="degrees">27</h3>
+                          <canvas height="32" width="32" id="snow"></canvas>
+                          <h5>14 <i>km/h</i></h5>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="daily-weather">
+                          <h2 class="day">Thu</h2>
+                          <h3 class="degrees">28</h3>
+                          <canvas height="32" width="32" id="sleet"></canvas>
+                          <h5>15 <i>km/h</i></h5>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="daily-weather">
+                          <h2 class="day">Fri</h2>
+                          <h3 class="degrees">28</h3>
+                          <canvas height="32" width="32" id="wind"></canvas>
+                          <h5>11 <i>km/h</i></h5>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="daily-weather">
+                          <h2 class="day">Sat</h2>
+                          <h3 class="degrees">26</h3>
+                          <canvas height="32" width="32" id="cloudy"></canvas>
+                          <h5>10 <i>km/h</i></h5>
+                        </div>
+                      </div>
+                      <div class="clearfix"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <footer>
+            <div class="pull-right">
+              Sleep Monitor - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+            </div>
+            <div class="clearfix"></div>
+          </footer>
+          <!-- /footer content -->
+      </div>
     <!-- jQuery -->
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -449,23 +450,23 @@
     <script>
       $(document).ready(function() {
         var data1 = [
-          [gd(2014, 1, 1), 17],
-          [gd(2014, 1, 2), 74],
-          [gd(2014, 1, 3), 6],
-          [gd(2014, 1, 4), 39],
-          [gd(2014, 1, 5), 20],
-          [gd(2014, 1, 6), 85],
-          [gd(2014, 1, 7), 7]
+          [gd(2012, 1, 1), 17],
+          [gd(2012, 1, 2), 74],
+          [gd(2012, 1, 3), 6],
+          [gd(2012, 1, 4), 39],
+          [gd(2012, 1, 5), 20],
+          [gd(2012, 1, 6), 85],
+          [gd(2012, 1, 7), 7]
         ];
 
         var data2 = [
-          [gd(2014, 1, 1), 82],
-          [gd(2014, 1, 2), 23],
-          [gd(2014, 1, 3), 66],
-          [gd(2014, 1, 4), 9],
-          [gd(2014, 1, 5), 119],
-          [gd(2014, 1, 6), 6],
-          [gd(2014, 1, 7), 20]
+          [gd(2012, 1, 1), 82],
+          [gd(2012, 1, 2), 23],
+          [gd(2012, 1, 3), 66],
+          [gd(2012, 1, 4), 9],
+          [gd(2012, 1, 5), 119],
+          [gd(2012, 1, 6), 6],
+          [gd(2012, 1, 7), 9]
         ];
         $("#canvas_dahs").length && $.plot($("#canvas_dahs"), [
           data1, data2
